@@ -1,17 +1,18 @@
 {
-  "name": "adapt-menu-background",
-  "version": "0.2.11",
+  "name": "adapt-page-header-background",
+  "version": "0.1.0",
   "framework": "^2.0.0",
-  "homepage": "https://github.com/kingsonline/adapt-menu-background",
-  "issues": "https://github.com/simondate/adapt-menu-background/issues",
-  "displayName": "Menu Background",
-  "extension": "menuBackground",
-  "description": "Allows image to be used as a background",
-  "main": "/js/adapt-menu-background.js",
+  "homepage": "https://github.com/kingsonline/adapt-page-header-background",
+
+  "issues": "https://github.com/simondate/adapt-page-header-background/issues",
+  "displayName": "Page header background",
+  "extension": "pageHeaderBackground",
+  "description": "Allows image to be used as a page header background",
+  "main": "/js/adapt-page-header-background.js",
   "keywords": [
     "adapt-plugin",
     "adapt-extension"
   ],
   "license": "GPLv3",
-  "targetAttribute": "_menuBackground"
+  "targetAttribute": "_pageHeaderBackground"
 }

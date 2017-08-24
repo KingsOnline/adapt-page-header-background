@@ -1,34 +1,12 @@
 define(["coreJS/adapt"], function(Adapt) {
+  Adapt.on("pageView:ready", function() {
+    var currentPageModel = Adapt.contentObjects._byAdaptID[Adapt.location._currentId][0];
+    console.log(currentPageModel);
+    if (currentPageModel.get('_pageHeaderBackground') == undefined || currentPageModel.get('_pageHeaderBackground')._link == "")
+      return;
+    console.log('applying');
+    $('.page-header').css('background', 'url(' + currentPageModel.get('_pageHeaderBackground')._link + ')');
+    $('.page-header').css('background-size', 'cover');
+  });
 
-    var Adapt = require('coreJS/adapt');
-    var Backbone = require('backbone');
-
-    var menuBackground = Backbone.View.extend({
-
-        className: "extension",
-
-        initialize: function() {}
-    });
-
-    Adapt.on("pageView:ready", function() {
-        if (Adapt.course.get('_menuBackground')._menuHeader._applyToPage && !(Adapt.course.get('_menuBackground')._menuHeader._link === "")) {
-          $('.page-header').css('background', 'url(' + Adapt.course.get('_menuBackground')._menuHeader._link + ')');
-          $('.page-header').css('background-size', 'cover');
-        }
-    });
-    Adapt.on("menuView:ready", function() {
-        console.log(Adapt.course.get('_menuBackground')._menuHeader._link);
-        if (!(Adapt.course.get('_menuBackground')._menuHeader._link === "")) {
-            $('.menu-header').css('background', 'url(' + Adapt.course.get('_menuBackground')._menuHeader._link + ')');
-            $('.menu-header').css('background-size', 'cover');
-        }
-        if (!(Adapt.course.get('_menuBackground')._backgroundLink === "")) {
-            $('.menu-container-inner').css('background', 'url(' + Adapt.course.get('_menuBackground')._backgroundLink + ')');
-            $('.menu-container-inner').css('padding-bottom', '22%');
-            $('.menu-container-inner').css('background-size', 'cover');
-            $('.menu-container-inner').css('background-position-y', '300px');
-        }
-    });
-
-    return menuBackground;
 });

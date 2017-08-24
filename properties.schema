@@ -11,47 +11,26 @@
           "type": "object"
         },
         "course": {
+          "type": "object"
+        },
+        "contentobject": {
           "type": "object",
           "properties": {
-            "_menuBackground": {
+            "_pageHeaderBackground": {
               "type": "object",
               "required": false,
-              "legend": "Menu Background",
+              "legend": "Page header background",
               "properties": {
-                "_menuHeader": {
-                  "type": "object",
-                  "required": false,
-                  "title": "Menu Header background",
-                  "properties": {
-                    "_link": {
-                      "type": "string",
-                      "required": false,
-                      "default": "",
-                      "inputType": "Asset:image",
-                      "title": "Menu header image"
-                    },
-                    "_applyToPage": {
-                      "default": false,
-                      "inputType": "Checkbox",
-                      "type": "boolean",
-                      "required": false,
-                      "title": "Apply to page too?"
-                    }
-                  }
-                },
-                "_backgroundLink": {
+                "_link": {
                   "type": "string",
                   "required": false,
                   "default": "",
                   "inputType": "Asset:image",
-                  "title": "Menu page background image"
+                  "title": "Page header background image"
                 }
               }
             }
           }
-        },
-        "contentobject": {
-          "type": "object"
         },
         "article": {
           "type": "object"

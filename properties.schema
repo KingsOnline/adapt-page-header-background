@@ -21,12 +21,19 @@
               "required": false,
               "legend": "Page header background",
               "properties": {
-                "_pageHeaderImage": {
-                  "type": "string",
+                "_graphic": {
+                  "type": "object",
                   "required": false,
-                  "default": "",
-                  "inputType": "Asset:image",
-                  "title": "Page header background image"
+                  "legend": "Page header background",
+                  "properties": {
+                    "src": {
+                      "type": "string",
+                      "required": false,
+                      "default": "",
+                      "inputType": "Asset:image",
+                      "title": "Page header background image"
+                    }
+                  }
                 }
               }
             }

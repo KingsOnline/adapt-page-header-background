@@ -21,7 +21,7 @@
               "required": false,
               "legend": "Page header background",
               "properties": {
-                "_link": {
+                "_pageHeaderImage": {
                   "type": "string",
                   "required": false,
                   "default": "",

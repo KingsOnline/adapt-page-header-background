@@ -16,24 +16,17 @@
         "contentobject": {
           "type": "object",
           "properties": {
-            "_pageHeaderBackground": {
+            "_graphic": {
               "type": "object",
               "required": false,
               "legend": "Page header background",
               "properties": {
-                "_graphic": {
-                  "type": "object",
+                "src": {
+                  "type": "string",
                   "required": false,
-                  "legend": "Page header background",
-                  "properties": {
-                    "src": {
-                      "type": "string",
-                      "required": false,
-                      "default": "",
-                      "inputType": "Asset:image",
-                      "title": "Page header background image"
-                    }
-                  }
+                  "default": "",
+                  "inputType": "Asset:image",
+                  "title": "Page header background image"
                 }
               }
             }

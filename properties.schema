@@ -16,7 +16,7 @@
         "contentobject": {
           "type": "object",
           "properties": {
-            "_graphic": {
+            "_pageHeaderBackground": {
               "type": "object",
               "required": false,
               "legend": "Page header background",

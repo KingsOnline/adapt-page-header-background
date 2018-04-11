@@ -1,10 +1,9 @@
 {
   "name": "adapt-page-header-background",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "framework": "^2.0.0",
   "homepage": "https://github.com/kingsonline/adapt-page-header-background",
-
-  "issues": "https://github.com/simondate/adapt-page-header-background/issues",
+  "issues": "https://github.com/kingsonline/adapt-page-header-background/issues",
   "displayName": "Page header background",
   "extension": "pageHeaderBackground",
   "description": "Allows image to be used as a page header background",
